@@ -1,3 +1,7 @@
+172.25.230.119
+www.myfirstvm.com
+abc.myhosts.com
+
 [webservers]
 172.25.230.97
 172.25.230.119
@@ -8,6 +12,6 @@ localhost
 localhost
 
 [mixed]
-172.25.23[1-10].119
+172.25.23[1:10].119
 www.googl.com
 www.myfirstansiblepractice.com
