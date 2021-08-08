@@ -1,11 +1,11 @@
-www.kishore.com
+172.25.230.97
 
 [webservers]
 172.25.230.97
 172.25.230.119
 localhost
 
-[appseervers]
+[appservers]
 172.25.230.119
 localhost
 
