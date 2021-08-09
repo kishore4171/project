@@ -1,0 +1,19 @@
+---
+- name: Httpd install playbook
+  hosts: webservers
+  become: yes
+  tasks:
+    - name: Install httpd package
+      yum:
+        name: httpd
+        state: absent
+    - name: enable and start service
+      service:
+        name: httpd
+        enabled: yes
+        state: started
+    - name: add entry in firewalld
+      firewalld:
+        service: http
+        permanent: yes
+        state: enabled
